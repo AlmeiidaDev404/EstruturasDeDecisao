@@ -1,0 +1,45 @@
+// Crie um programa que receba o nome do dia da semana por extenso e imprima o dia consecutivo
+
+algoritmo "DiaSeguinte"
+
+var
+   dia: caracter
+   i: inteiro
+   dias: vetor[1..7] de caracter
+   encontrou: logico
+
+inicio
+
+   encontrou <- falso
+
+   
+   dias[1] <- "segunda"
+   dias[2] <- "terça"
+   dias[3] <- "quarta"
+   dias[4] <- "quinta"
+   dias[5] <- "sexta"
+   dias[6] <- "sábado"
+   dias[7] <- "domingo"
+
+   escreval("Digite qual dia da semana é hoje:")
+   leia(dia)
+
+   para i de 1 ate 7 faca
+      se dia = dias[i] entao
+         
+        encontrou <- verdadeiro
+
+          se i = 7 entao
+            escreval("Amanhã será: ", dias[1])
+          senao
+            escreval("Amanhã será: ", dias[i+1])
+          fimse
+
+      fimse
+   fimpara
+
+   se nao encontrou entao
+      escreval("Dia inválido")
+   fimse
+
+fimalgoritmo

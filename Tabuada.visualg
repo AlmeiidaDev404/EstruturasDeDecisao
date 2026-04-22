@@ -1,0 +1,22 @@
+algoritmo "Tabuada"
+
+var
+  tabuada: inteiro
+  i: inteiro
+
+inicio
+  escreval("Digite qual tabuada deseja consultar (1 a 10):")
+  leia(tabuada)
+
+  enquanto (tabuada < 1) ou (tabuada > 10) faca
+    escreval("Opção inválida! tente novamente.")
+    leia(tabuada)
+  fimenquanto
+
+  para i de 1 ate 10 faca
+    escreval(tabuada, " x ", i, " = ", tabuada * i)
+  fimpara
+
+fimalgoritmo
+
+

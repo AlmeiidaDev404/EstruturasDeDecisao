@@ -1,5 +1,3 @@
-// Crie um programa que receba o nome do dia da semana por extenso e imprima o dia consecutivo
-
 algoritmo "DiaSeguinte"
 
 var
